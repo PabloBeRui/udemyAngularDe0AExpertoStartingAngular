@@ -11,6 +11,9 @@
   </td><dd>{{capitalizedName}}</dd>
 </dl>
 
-<button class="btn btn-primary mx-2" (click)="changeHero('SuperLópez')">cambiar nombre</button>
-<button class="btn btn-primary" (click)="changeAge(50)">cambiar edad</button>
+<!-- <button class="btn btn-primary mx-2" (click)="changeHero('SuperLópez')">cambiar nombre</button> -->
+<button *ngIf="name!=='SuperLópez'" class="btn btn-primary mx-2" (click)="changeHero('SuperLópez')">cambiar nombre</button>
+<!-- <button class="btn btn-primary" (click)="changeAge(50)">cambiar edad</button> -->
+<button *ngIf="age!=50" class="btn btn-primary mx-2" (click)="changeAge(50)">cambiar edad</button>
+<button *ngIf="name==='SuperLópez' || age===50 " class="btn btn-primary mx-2" (click)="resetForm()">Reset</button>
 
