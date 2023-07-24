@@ -6,11 +6,11 @@
   <td>Edad:
   </td><dd>{{age}}</dd>
   <td>Método:
-  </td><dd>algún método</dd>
+  </td><dd>{{getHeroDescription()}}</dd>
   <td>Capitalizado:
-  </td><dd>nombre capitalizado</dd>
+  </td><dd>{{capitalizedName}}</dd>
 </dl>
 
-<button class="btn btn-primary mx-2">cambiar nombre</button>
-<button class="btn btn-primary">cambiar edad</button>
+<button class="btn btn-primary mx-2" (click)="changeHero('SuperLópez')">cambiar nombre</button>
+<button class="btn btn-primary" (click)="changeAge(50)">cambiar edad</button>
 
