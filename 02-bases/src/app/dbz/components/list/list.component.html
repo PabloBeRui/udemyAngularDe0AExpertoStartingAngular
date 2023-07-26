@@ -1,9 +1,10 @@
 <h4>listado</h4>
 <ul class="list-group">
   <li *ngFor="let character of characterList; let i= index;
-  let isFirst=first;let isLast=last;"
+  let isFirst=first;let isLast=last; let isEven=even; let isOdd=odd"
   class="list-group-item">
     <span class="text-primary">{{i+1}}. </span>
+
     <span>{{character.name}} -
   </span>
    <strong>Power: </strong>
@@ -12,9 +13,13 @@
 
    <!-- <span *ngIf="i===0">  -> Es el primero</span> -->
 
-<span>   Es el primero: {{i===0}}</span>
+   <!-- <span>   Es el primero: {{i===0}}</span> -->
+   <!-- <span>   Es el primero: {{isFirst}}</span> -->
 
-<span>   Es el último: {{characterList.length-1===i}}</span>
+<!-- <span>   Es el último: {{characterList.length-1===i}}</span> -->
+<!-- <span>   Es el último: {{isLast}}</span>
+<span>   Es Impar: {{isEven}}</span> //Even es par, pero al empezar en 1 tengo que hacerlo al revés de Odd
+<span>   Es Par: {{isOdd}}</span> -->
    <!-- <span *ngIf="i===characterList.length-1">  -> Es el último</span> -->
 
 
