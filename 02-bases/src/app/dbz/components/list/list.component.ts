@@ -9,4 +9,9 @@ import { Character } from '../../interfaces/character.interface';
 export class ListComponent {
   @Input()
   public characterList: Character[] = [{ name: 'Trunks', power: 10 }];
+
+  // onDeleteCharacter(index): void {
+    //Emitir el ID del personaje
+    // console.log(index);
+  // }
 }
