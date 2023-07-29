@@ -10,8 +10,8 @@ export class ListComponent {
   @Input()
   public characterList: Character[] = [{ name: 'Trunks', power: 10 }];
 
-  // onDeleteCharacter(index): void {
-    //Emitir el ID del personaje
-    // console.log(index);
-  // }
+  onDeleteCharacter(): void {
+    // Emitir el ID del personaje
+    console.log();
+  }
 }
