@@ -16,4 +16,10 @@ export class MainPageComponent {
     // console.log(character);
     this.characters.push(character);
   }
+  onDeleteCharacter(character: Character): void {
+    const index = this.characters.indexOf(character);
+    if (index > -1) {
+      this.characters.splice(index, 1);
+    }
+  }
 }
