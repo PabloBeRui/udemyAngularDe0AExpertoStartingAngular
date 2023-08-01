@@ -11,7 +11,7 @@ export class DbzService {
     { id: uuid(), name: 'Goku', power: 9500 },
     { id: uuid(), name: 'Vegeta', power: 7500 },
   ];
-  onNewCharacter(character: Character): void {
+  addCharacter(character: Character): void {
     // console.log('MainPage');
     // console.log(character);
     const newCharacter: Character = {
